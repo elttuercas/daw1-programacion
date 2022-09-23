@@ -10,7 +10,7 @@ public class EX5
 {
     public static void main(String[] args)
     {
-        System.out.printf("Valor máximo de short: %d", Short.MAX_VALUE);
-        System.out.printf("Valor mínimo de short: %d", (short)(Short.MAX_VALUE + 1));
+        System.out.printf("Valor máximo de short: %d\n", Short.MAX_VALUE);
+        System.out.printf("Valor mínimo de short: %d\n", (short)(Short.MAX_VALUE + 1));
     }
 }

@@ -21,7 +21,7 @@ public class EX3
         try
         {
             int iIn = reader.readInt("Introduzca su edad:");
-            System.out.printf("El año que viene usted tendrá %d años", ++iIn);
+            System.out.printf("El año que viene usted tendrá %d años\n", ++iIn);
         }
         catch (NumberFormatException e)
         {

@@ -2,8 +2,8 @@ package ch1;
 
 import util.StdinReader;
 
-import java.util.Calendar;
 import java.io.IOException;
+import java.util.Calendar;
 
 /**
  * Class EX4
@@ -15,7 +15,7 @@ public class EX4
 {
     public static void main(String[] args) throws IOException, NumberFormatException
     {
-        int iMaybeCurrentYear, iDefinitelyCurrentYear, iBirthYear;
+        int         iMaybeCurrentYear, iDefinitelyCurrentYear, iBirthYear;
         StdinReader reader = new StdinReader();
         iMaybeCurrentYear = reader.readInt("Introduzca el año actual:");
         iDefinitelyCurrentYear = Calendar.getInstance().get(Calendar.YEAR) - 1900;
@@ -32,6 +32,6 @@ public class EX4
             System.out.println("Hmmmmmm...");
         }
 
-        System.out.printf("Usted tiene %d años", iMaybeCurrentYear - iBirthYear);
+        System.out.printf("Usted tiene %d años\n", iMaybeCurrentYear - iBirthYear);
     }
 }
