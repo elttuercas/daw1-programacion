@@ -15,14 +15,14 @@ public class StdinReader
     /**
      * The buffered reader used to get values from stdin.
      */
-    private final BufferedReader reader;
+    private final BufferedReader m_reader;
 
     /**
      * TryReader default constructor.
      */
     public StdinReader()
     {
-        reader = new BufferedReader(new InputStreamReader(System.in));
+        m_reader = new BufferedReader(new InputStreamReader(System.in));
     }
 
     /**
@@ -50,7 +50,7 @@ public class StdinReader
      */
     public int readInt() throws IOException, NumberFormatException
     {
-        return Integer.parseInt(reader.readLine());
+        return Integer.parseInt(m_reader.readLine());
     }
 
     /**
@@ -78,7 +78,7 @@ public class StdinReader
      */
     public double readDouble() throws IOException, NumberFormatException
     {
-        return Double.parseDouble(reader.readLine());
+        return Double.parseDouble(m_reader.readLine());
     }
 
     /**
@@ -104,6 +104,6 @@ public class StdinReader
      */
     public String readString() throws IOException
     {
-        return reader.readLine();
+        return m_reader.readLine();
     }
 }
