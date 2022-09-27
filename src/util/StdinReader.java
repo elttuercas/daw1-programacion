@@ -18,7 +18,7 @@ public class StdinReader
     private final BufferedReader m_reader;
 
     /**
-     * TryReader default constructor.
+     * StdinReader default constructor.
      */
     public StdinReader()
     {
